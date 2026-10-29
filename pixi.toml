@@ -5,6 +5,9 @@ platforms = ["win-64", "osx-arm64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
+setup-nbstripout = "nbstripout --install"
+check-nbstripout = "nbstripout --status"
+strip-all = "nbstripout *.ipynb"
 
 [dependencies]
 pandas = ">=3.1.0,<4"
@@ -16,3 +19,4 @@ seaborn = ">=0.13.2,<0.14"
 pixi-kernel = ">=0.7.1,<0.8"
 jupyterlab = ">=4.6.4,<5"
 pixi-pycharm = ">=0.0.12,<0.0.13"
+nbstripout = ">=0.9.1,<0.10"
